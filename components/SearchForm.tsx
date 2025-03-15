@@ -1,3 +1,5 @@
+// https://nextjs.org/docs/app/api-reference/components/form#search-form-that-leads-to-a-search-result-page
+
 import React from "react";
 import Form from "next/form";
 import SearchFormReset from "./SearchFormReset";

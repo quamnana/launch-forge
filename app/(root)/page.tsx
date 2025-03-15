@@ -1,3 +1,5 @@
+// https://nextjs.org/docs/app/api-reference/functions/use-search-params
+
 import SearchForm from "../../components/SearchForm";
 import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 import { STARTUPS_QUERY } from "@/sanity/lib/queries";

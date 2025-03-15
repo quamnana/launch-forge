@@ -1,3 +1,5 @@
+// https://nextjs.org/docs/app/api-reference/config/next-config-js/ppr
+
 import { client } from "@/sanity/lib/client";
 import { STARTUP_BY_ID_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
