@@ -12,3 +12,11 @@ export function formatDate(date: string) {
     year: "numeric",
   });
 }
+
+export function pluralizeString(count: number, str: string) {
+  if (count > 1) {
+    return `${count} ${str}s`;
+  } else {
+    return `${count} ${str}`;
+  }
+}
