@@ -57,7 +57,7 @@ const workSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Lauch Forge",
+  title: "Launch Forge",
   description: "Forge, Pitch and Launch",
 };
 
