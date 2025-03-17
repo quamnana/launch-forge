@@ -136,6 +136,16 @@ The Tailwind CSS configuration is located in tailwind.config.ts. You can customi
 
 The Sanity configuration and schemas are located in the sanity directory. You can customize the schemas to match your content structure.
 
+## Rendering Features Used
+
+1. **Server-Side Rendering (SSR):** SSR allows you to render pages on the server at request time. This is useful for pages that require dynamic data fetching and need to be SEO-friendly.
+
+2. **Static Site Generation (SSG):** SSG allows you to generate static HTML pages at build time. This is useful for pages that can be pre-rendered and do not require frequent updates.
+
+3. **Incremental Static Regeneration (ISR):** ISR allows you to update static pages after they have been built. This is useful for pages that need to be updated periodically without rebuilding the entire site.
+
+4. **Client-Side Rendering (CSR):** CSR allows you to fetch and render data on the client side after the initial page load. This is useful for pages that require user interaction or real-time updates.
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
