@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Launch Forge
+
+Launch Forge is a comprehensive web application designed to streamline the process of launching and managing startup projects. It provides a suite of tools for entrepreneurs and project managers to create, edit, and manage their projects efficiently. The application leverages modern web technologies to deliver a seamless and responsive user experience.
+
+## Features
+
+- **User Authentication**: Secure user authentication using **NextAuth** for managing user sessions and access control.
+- **Startup Management:** Tools for creating, editing, and managing startup projects, including detailed startup descriptions and timelines.
+- **Responsive Design:** Fully responsive design using **Tailwind CSS**, ensuring a consistent user experience across all devices.
+- **Custom Theming:** Customizable themes with support for dark mode and various color schemes.
+- **Sanity Integration:** Integration with Sanity for managing and displaying rich content, including images and text.
+- **Styled Components:** Utilization of styled-components for writing CSS in JavaScript, enabling dynamic styling based on component state.
+- **Real-time Updates:** Real-time updates and notifications to keep users informed about project changes and updates.
+- Fast and optimized development with Next.js
+- Automatic font optimization with [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+- Easy deployment with Vercel
+- Hot-reloading for instant feedback during development
+
+## Technologies Used
+
+- **Nextjs and React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+- **TypeScript:** A statically typed superset of JavaScript that enhances code quality and maintainability.
+- **Sanity:** A headless CMS for managing structured content.
+- **ShadCn:** A library for styling React components using tagged template literals.
+- **NextAuth:** An authentication library for Next.js applications.
+- **Sentry:** Bug tracing and performance tracking
+- **Zod:** TypeScript library for type validation
 
 ## Getting Started
 
@@ -18,19 +45,104 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setting Up
 
-## Learn More
+To set up the project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/launch-forge.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd launch-forge
+   ```
+3. Install the dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Set up environment variables: Create a `.env.local` file in the root directory and add the necessary environment variables. Example:
 
-## Deploy on Vercel
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID=your-sanity-project-id
+NEXT_PUBLIC_SANITY_DATASET=your-sanity-dataset
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-nextauth-secret
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. To start the development server, run:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+6. To build the project for production, run:
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+
+7. To start the production server, run:
+
+```bash
+npm start
+# or
+yarn start
+# or
+pnpm start
+```
+
+## Project Structure
+
+```markdown
+launch-forge/
+├── app/
+│ ├── components/ # React components
+│ ├── pages/ # Next.js pages
+│ ├── styles/ # Global styles and CSS files
+│ ├── utils/ # Utility functions
+│ └── ... # Other directories and files
+├── public/ # Public assets
+├── sanity/ # Sanity configuration and schemas
+├── .env.local # Environment variables
+├── package.json # Project dependencies and scripts
+├── tailwind.config.ts # Tailwind CSS configuration
+└── tsconfig.json # TypeScript configuration
+```
+
+## Customization
+
+### Tailwind CSS Configuration
+
+The Tailwind CSS configuration is located in tailwind.config.ts. You can customize the theme, plugins, and other settings as needed.
+
+### Sanity Configuration
+
+The Sanity configuration and schemas are located in the sanity directory. You can customize the schemas to match your content structure.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+- Fork the repository.
+- Create a new branch (git checkout -b feature/your-feature).
+- Make your changes.
+- Commit your changes (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature/your-feature).
+- Open a pull request.
